@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<form  class=" form row" #movieform=ngForm (ngSubmit)="formSubmit(movieform)">
+    <div class="col-4 m-2">
+        <input type="text" name="movieName" placeholder="movieName" class="form-control" ngModel #moviename="ngModel">
+    </div>
+    <div class="col-4 m-2">
+        <input type="text" name="actorName" placeholder="actorName" class="form-control" ngModel #actorName="ngModel">
+    </div>
+    <div class="col-4 m-2">
+        <input type="text" name="acterssName" placeholder="acterssName" class="form-control" ngModel #acterssName="ngModel" >
+    </div>
+    <div class="col-4 m-2">
+        <input type="text" name="rating" placeholder="rating" class="form-control" ngModel #rating="ngModel">
+    </div>
+<div>
+    <button class="btn btn-primary">Submit</button>
+</div>
+</form>
